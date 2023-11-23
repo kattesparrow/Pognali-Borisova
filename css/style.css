@@ -1,0 +1,466 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1.15;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url("../fonts/BloggerSans-Light.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url("../fonts/BloggerSans400.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url("../fonts/BloggerSans-Medium.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url("../fonts/BloggerSans-Bold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+} 
+
+body {
+    font-family: 'Blogger Sans', sans-serif;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 39px 0;
+    width: 100%;
+}
+
+.header__container {
+    width: 1320px;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    margin: 46px 60px 11px 60px;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__left svg {
+    margin-left: 40px;
+    margin-top: 28px;
+}
+
+.header__nav {
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.nav__link {
+    font-weight: 500;
+}
+
+.header__menu-tablet {
+    display: none;
+}
+
+.header__right {
+    display: flex;
+}
+
+.contact {
+    padding-top: 3px;
+    padding-right: 0;
+    background-color: #161c34;
+    border: 0;
+    padding: 0;
+}
+
+.header__authorization {
+    margin-right: 60px;
+}
+
+.promo {
+    height: 750px;
+    max-width: 1440px;
+    background-image: url(../img/globe-back-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -2;
+}
+
+.promo__container {
+    padding-top: 200px;
+    height: 640px;
+}
+
+.promo__review {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.promo__title {
+    font-family: 'Blogger Sans';
+    font-weight: 700;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-left: 69px;
+    padding-top: 99px;
+    size: 60px;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 418px;
+    height: 210px;
+}
+
+.traveller__illustration {
+    max-width: 431px;
+    height: 100%;
+    margin-left: 60px;
+    margin-top: 0;
+}
+
+.promo__quote {
+    width: 264px;
+    height: 183px;
+    margin-right: 83px;
+}
+
+.promo__quote-one {
+    font-family: 'Blogger Sans';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 111px;
+    max-width: 264px;
+}
+
+.promo__autor-one {
+    font-family: 'Blogger Sans';
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 45px;
+    max-width: 246px;
+    max-height: 74px;
+}
+
+.action__plan {
+    position: relative;
+    margin-left: 60px;
+    margin-top: -230px;
+    max-width: 1320px;
+    margin-right: 60px;
+}
+
+.action__plan-list {
+    font-family: 'Blogger Sans';
+    max-width: 1320px;
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.action__plan-list1 {
+    width: 345px;
+    height: 107px;
+    padding: 30px;
+    background-color: #FF8D30;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.action__plan-list2 {
+    width: 345px;
+    height: 107px;
+    padding: 30px;
+    background-color: #FFA530;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    margin-left: -30px;
+}
+
+.action__plan-list3 {
+    width: 345px;
+    height: 107px;
+    padding: 30px;
+    background-color: #FFBD30;
+    border-radius: 15px;
+    position: relative;
+    z-index: 3;
+    margin-left: -30px;
+}
+
+.action__plan-list4 {
+    width: 345px;
+    height: 107px;
+    padding: 30px;
+    background-color: #FFD74B;
+    border-radius: 15px;
+    position: relative;
+    z-index: 4;
+    margin-left: -30px;
+}
+
+.action__plan-list li {
+    display: flex;
+    justify-content: space-around;
+}
+
+li p {
+    width: 200px;
+}
+
+li span {
+    color: #fff;
+}
+
+.about {
+    height: 808px;
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    background-image: url(../img/background_about.png);
+    top: 697px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: -3;
+}
+
+.about__container {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: 60px;
+    display: flex;
+    position: relative;
+}
+
+.about__review {
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.about__title {
+    font-family: 'Blogger Sans';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: #FF8D30;
+    max-width: 197px;
+    max-height: 45px;
+    margin-bottom: 55px;
+}
+
+.about__text1 {
+    font-family: 'Blogger Sans';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    max-width: 619px;
+    margin-bottom: 38px;
+}
+
+.about__text2 {
+    font-family: 'Blogger Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: #FFFFFF;
+    max-width: 425px;
+    margin-bottom: 85px;
+}
+
+.about__button {
+    width: 274px;
+    height: 80px;
+    border-radius: 20px;
+    background: #FFD74B;
+    font-family: 'Blogger Sans';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__button svg {
+    margin-left: 80px;
+    width: 14px;
+    height: 13px;
+}
+
+.about__back-coll {
+    max-width: 630px;
+    max-height: 665px;
+    margin-top: -495px;
+    margin-left: 595px;
+    z-index: -2;
+}
+
+.countries {
+    height: 838px;
+    background-image: url(../img/background_coutry.png);
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    top: 1445px;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: -4;
+    border-radius: 0 0 50px 50px;
+}
+
+.countries__container {
+    max-width: 1320px;
+    margin-left: 60px;
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+
+.countries__img {
+    text-align: left;
+}
+
+.countries__background-img {
+    position: absolute;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 88px;
+  margin-left: 60px;
+  justify-content: space-between;
+  z-index: -3;
+}
+
+.countries__background-img-rest {
+    height: 140px;
+}
+
+.countries__background-img-flag {
+    position: relative;
+    margin-right: 120px;
+}
+
+.images-countre:first-child {
+    margin-top: 176px;
+}
+
+.images-countre {
+    margin-left: 60px;
+    padding-top: 10px;
+    width: 560px;
+    height: 140px;
+}
+
+.countries__text {
+    margin-top: 185px;
+    margin-right: 150px;
+    font-family: 'Blogger Sans';
+    letter-spacing: 0em;
+    text-align: left;  
+}
+
+.countries__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #FF8D30;
+    font-family: 'Blogger Sans';
+}
+
+.countries__text1 {
+    width: 378px;
+    height: 165px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-top: 58px;
+}
+
+.countries__button {
+    width: 275px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #FFD74B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 98px;
+}
+
+.countries__button svg {
+    margin-left: 40px;
+    width: 14px;
+    height: 13px;
+}
